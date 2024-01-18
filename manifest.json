@@ -1,7 +1,7 @@
 {
-	"name": "Sample Theme",
+	"name": "Nightfox",
 	"version": "1.0.0",
 	"minAppVersion": "1.0.0",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md"
+	"author": "mbromell",
+	"authorUrl": "https://github.com/mbromell"
 }
