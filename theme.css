@@ -1,34 +1,108 @@
-body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+/*
+[colors.primary]
+background = #192330
+foreground = #cdcecf
+dim_foreground = #aeafb0
+bright_foreground = #d6d6d7
+
+[colors.cursor]
+text = #cdcecf
+cursor = #aeafb0
+
+[colors.selection]
+text = #cdcecf
+background = #2b3b51
+
+[colors.normal]
+black = #393b44
+red = #c94f6d
+green = #81b29a
+yellow = #dbc074
+blue = #719cd6
+orange = #f4a261 --
+magenta = #9d79d6
+cyan = #63cdcf
+white = #dfdfe0
+
+[colors.bright]
+black = #575860
+red = #d16983
+green = #8ebaa4
+yellow = #e0c989
+blue = #86abdc
+magenta = #baa1e2
+cyan = #7ad5d6
+white = #e4e4e5
+
+[colors.dim]
+black = #30323a
+red = #ab435d
+green = #6e9783
+yellow = #baa363
+blue = #6085b6
+magenta = #8567b6
+cyan = #54aeb0
+white = #bebebe
+*/
+.theme-dark {
+	--background-primary: #192330;
+	--background-secondary: #131a24;
+	--accent-h: 214;
+	--accent-s: 55%;
+	--accent-l: 64%;
+	/* --background-secondary-alt: #131a24; */
+	--titlebar-background-focused: #131a24;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
-}
+/*
+[colors.primary]
+background = #f6f2ee
+foreground = #3d2b5a
+dim_foreground = #302b5d
+bright_foreground = #643f61
 
-svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
-}
+[colors.cursor]
+text = #3d2b5a
+cursor = #643f61
 
-.menu {
-	padding: var(--size-2-1);
-}
+[colors.selection]
+text = #3d2b5a
+background = #e7d2be
 
-.menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
-}
+[colors.normal]
+black = #352c24
+red = #a5222f
+green = #396847
+yellow = #ac5402
+blue = #2848a9
+orange = #955f61 --
+magenta = #6e33ce
+cyan = #287980
+white = #f2e9e1
 
-.menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+[colors.bright]
+black = #534c45
+red = #b3434e
+green = #577f63
+yellow = #b86e28
+blue = #4863b6
+magenta = #8452d5
+cyan = #488d93
+white = #f4ece6
+
+[colors.dim]
+black = #2d251f
+red = #8c1d28
+green = #30583c
+yellow = #924702
+blue = #223d90
+magenta = #5e2baf
+cyan = #22676d
+white = #cec6bf
+*/
+.theme-light {
+	--background-primary: #f6f2ee;
+	--background-secondary: #e4dcd4;
+	/* --background-secondary-alt: #e4dcd4; */
+	--titlebar-background-focused: #e4dcd4;
 }
