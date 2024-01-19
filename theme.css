@@ -13,45 +13,50 @@ cursor = #aeafb0
 text = #cdcecf
 background = #2b3b51
 
-[colors.normal]
-black = #393b44
-red = #c94f6d
-green = #81b29a
-yellow = #dbc074
-blue = #719cd6
-orange = #f4a261 --
-magenta = #9d79d6
-cyan = #63cdcf
-white = #dfdfe0
-
-[colors.bright]
-black = #575860
-red = #d16983
-green = #8ebaa4
-yellow = #e0c989
-blue = #86abdc
-magenta = #baa1e2
-cyan = #7ad5d6
-white = #e4e4e5
-
-[colors.dim]
-black = #30323a
-red = #ab435d
-green = #6e9783
-yellow = #baa363
-blue = #6085b6
-magenta = #8567b6
-cyan = #54aeb0
-white = #bebebe
+color : normal : bright : dim
+red #c94f6d #d16983 #ab435d
+green #81b29a #8ebaa4 #6e9783
+yellow #dbc074 #e0c989 #baa363
+blue #719cd6 #86abdc #6085b6
+magenta #9d79d6 #baa1e2 #8567b6
+cyan #63cdcf #7ad5d6 #54aeb0
+orange #f4a261 #f6b079 #cf8a52
+pink #d67ad2 #dc8ed9 #b668b3
 */
 .theme-dark {
-	--background-primary: #192330;
-	--background-secondary: #131a24;
-	--accent-h: 214;
-	--accent-s: 55%;
-	--accent-l: 64%;
-	/* --background-secondary-alt: #131a24; */
-	--titlebar-background-focused: #131a24;
+	--accent-h: 214; --accent-s: 55%; --accent-l: 64%;
+	--mono-rgb-100: 205, 206, 207;
+	--mono-rgb-0: 19, 26, 36;
+	--color-base-100: #cdcecf;
+	--color-base-70: #aeafb0;
+	--color-base-60: #71839b;
+	--color-base-50: #5d728e;
+	--color-base-40: #496283;
+	--color-base-35: #39506d;
+	--color-base-30: #29394f;
+	--color-base-25: #243347;
+	--color-base-20: #212e3f;
+	--color-base-10: #192330;
+	--color-base-05: #151d28;
+	--color-base-00: #131a24;
+	--color-red: #c94f6d;
+	--color-red-rgb: 201, 79, 109;
+	--color-orange: #f4a261;
+	--color-orange-rgb: 244, 162, 97;
+	--color-yellow: #dbc074;
+	--color-yellow-rgb: 219, 192, 116;
+	--color-green: #81b29a;
+	--color-green-rgb: 129, 178, 154;
+	--color-cyan: #63cdcf;
+	--color-cyan-rgb: 99, 205, 207;
+	--color-blue: #719cd6;
+	--color-blue-rgb: 113, 156, 214;
+	--color-purple: #9d79d6;
+	--color-purple-rgb: 157, 121, 214;
+	--color-pink: #d67ad2;
+	--color-pink-rgb: 214, 122, 210;
+
+	--code-comment: #738091;
 }
 
 /*
@@ -69,40 +74,85 @@ cursor = #643f61
 text = #3d2b5a
 background = #e7d2be
 
-[colors.normal]
-black = #352c24
-red = #a5222f
-green = #396847
-yellow = #ac5402
-blue = #2848a9
-orange = #955f61 --
-magenta = #6e33ce
-cyan = #287980
-white = #f2e9e1
-
-[colors.bright]
-black = #534c45
-red = #b3434e
-green = #577f63
-yellow = #b86e28
-blue = #4863b6
-magenta = #8452d5
-cyan = #488d93
-white = #f4ece6
-
-[colors.dim]
-black = #2d251f
-red = #8c1d28
-green = #30583c
-yellow = #924702
-blue = #223d90
-magenta = #5e2baf
-cyan = #22676d
-white = #cec6bf
+color : normal : bright : dim
+red #c94f6d #d16983 #ab435d
+green #81b29a #8ebaa4 #6e9783
+yellow #dbc074 #e0c989 #baa363
+blue #719cd6 #86abdc #6085b6
+magenta #9d79d6 #baa1e2 #8567b6
+cyan #63cdcf #7ad5d6 #54aeb0
+orange #f4a261 #f6b079 #cf8a52
+pink #d67ad2 #dc8ed9 #b668b3
 */
 .theme-light {
-	--background-primary: #f6f2ee;
-	--background-secondary: #e4dcd4;
-	/* --background-secondary-alt: #e4dcd4; */
-	--titlebar-background-focused: #e4dcd4;
+	--accent-h: 225; --accent-s: 61%; --accent-l: 40%;
+	--mono-rgb-100: 61, 43, 90;
+	--mono-rgb-0: 228, 220, 212;
+	--color-base-100: #3d2b5a;
+	--color-base-70: #302b5d;
+	--color-base-60: #643f61;
+	--color-base-50: #824d5b;
+	--color-base-40: #9f7580;
+	--color-base-35: #84949a;
+	--color-base-30: #aab0ad;
+	--color-base-25: #d3c7bb;
+	--color-base-20: #dbd1dd;
+	--color-base-10: #f6f2ee;
+	--color-base-05: #eae3dc;
+	--color-base-00: #e4dcd4;
+    --color-red: #a5222f;
+    --color-red-bright-rgb: 209, 105, 131;
+    --color-red-rgb: 165, 34, 47;
+    --color-orange: #955f61;
+    --color-orange-bright-rgb: 246, 176, 121;
+    --color-orange-rgb: 149, 95, 97;
+    --color-yellow: #ac5402;
+    --color-yellow-bright-rgb: 224, 201, 137;
+    --color-yellow-rgb: 172, 84, 2;
+    --color-green: #396847;
+    --color-green-bright-rgb: 142, 186, 164;
+    --color-green-rgb: 87, 127, 99;
+    --color-cyan: #287980;
+    --color-cyan-bright-rgb: 122, 213, 214;
+    --color-cyan-rgb: 40, 121, 128;
+    --color-blue: #2848a9;
+    --color-blue-bright-rgb: 134, 171, 220;
+    --color-blue-rgb: 40, 72, 169;
+    --color-purple: #6e33ce;
+    --color-purple-bright-rgb: 186, 161, 226;
+    --color-purple-rgb: 110, 51, 206;
+    --color-pink: #a440b5;
+    --color-pink-bright-rgb: 220, 142, 217;
+    --color-pink-rgb: 164, 64, 181;
+
+	--graph-line: var(--color-base-25);
+	--graph-node-tag: rgb(var(--color-green-bright-rgb));
+	--graph-node-attachment: rgb(var(--color-yellow-bright-rgb));
+
+	--canvas-color-1: var(--color-red-bright-rgb);
+    --canvas-color-2: var(--color-orange-bright-rgb);
+    --canvas-color-3: var(--color-yellow-bright-rgb);
+    --canvas-color-4: var(--color-green-bright-rgb);
+    --canvas-color-5: var(--color-cyan-bright-rgb);
+    --canvas-color-6: var(--color-purple-bright-rgb);
+	
+	--code-comment: #837a72;
+	--callout-warning: var(--color-yellow-rgb);
+	--text-warning: var(--color-yellow);
+}
+
+
+body {
+	--background-primary: var(--color-base-10);
+	--background-primary-alt: var(--color-base-05);
+	--background-secondary: var(--color-base-05);
+	--titlebar-background: var(--color-base-00);
+	--titlebar-background-focused: var(--color-base-00);
+	--ribbon-background: var(--color-base-00);
+	--ribbon-background-collapsed: var(--color-base-05);
+	--modal-border-color: var(--color-base-30);
+	--background-modifier-border: var(--color-base-25);
+    --background-modifier-border-hover: var(--color-base-30);
+    --background-modifier-border-focus: var(--color-base-35);
+	--table-header-background: var(--color-base-05);
 }
