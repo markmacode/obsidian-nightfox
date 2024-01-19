@@ -56,6 +56,8 @@ pink #d67ad2 #dc8ed9 #b668b3
 	--color-pink: #d67ad2;
 	--color-pink-rgb: 214, 122, 210;
 
+	--graph-node-tag: #4f9c77;
+
 	--code-comment: #738091;
 }
 
@@ -126,8 +128,8 @@ pink #d67ad2 #dc8ed9 #b668b3
     --color-pink-rgb: 164, 64, 181;
 
 	--graph-line: var(--color-base-25);
-	--graph-node-tag: rgb(var(--color-green-bright-rgb));
-	--graph-node-attachment: rgb(var(--color-yellow-bright-rgb));
+	--graph-node-tag: #19ae5b;
+	--graph-node-attachment: #e0af0f;
 
 	--canvas-color-1: var(--color-red-bright-rgb);
     --canvas-color-2: var(--color-orange-bright-rgb);
